@@ -22,5 +22,9 @@ const productRoutes = require("./routes/product");
  //app.use(cors());
 
 // route Middlewares
+// app.use("/", );
+app.get("/", (resq, res)=>{
+  res.send("Hello");
+})
 app.use("/api/products", productRoutes);
 app.listen(4000, () => console.log("server is runing on port 4000!"));
